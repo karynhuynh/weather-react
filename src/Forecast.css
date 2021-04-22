@@ -1,0 +1,16 @@
+.day {
+  margin-left: 17px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.forecast-icon {
+  margin-left: 20px;
+  font-size: large;
+}
+
+.maxmin {
+  margin-left: 15px;
+  font-weight: bolder;
+  text-align: center;
+}

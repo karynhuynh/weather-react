@@ -1,0 +1,68 @@
+.main-card {
+  height: 380px;
+  width: 330px;
+  margin-top: 22px;
+  margin-bottom: 25px;
+  background-image: url("https://img.freepik.com/free-photo/cloud-background-with-pastel-colour_66899-1598.jpg?size=626&ext=jpg");
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
+}
+
+.main-card-icon {
+  font-size: 110px;
+  margin-top: 30px;
+}
+
+.card-body,
+.forecast-icon,
+.maxmin {
+  text-align: center;
+}
+
+Temperature h2,
+Temperature h6,
+.main-card,
+.celsius,
+.fahrenheit,
+.units,
+.sunrise,
+.sunset {
+  color: #fff;
+}
+
+.temperature {
+  font-size: 30px;
+}
+
+.units {
+  position: relative;
+  top: -14px;
+  text-decoration: none;
+}
+
+.card-subtitle,
+.units,
+.main-card-text {
+  font-size: 14px;
+}
+
+.main-card-text {
+  margin-left: 30px;
+}
+
+.active {
+  cursor: default;
+}
+
+.active:hover,
+.celsius,
+.fahrenheit {
+  text-decoration: none;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
