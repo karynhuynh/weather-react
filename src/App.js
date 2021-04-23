@@ -7,17 +7,19 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="weather mt-5">
-      <Search />
-      <Temperature />
-      <hr />
-      <Forecast />
-      <small>
-        <a href="https://github.com/karynhuynh/weather-react">
-          Open-source code
-        </a>{" "}
-        by Karyn Huynh
-      </small>
+    <div className="App">
+      <div className="container mt-5">
+        <Search />
+        <Temperature />
+        <hr />
+        <Forecast />
+        <small>
+          <a href="https://github.com/karynhuynh/weather-react" target="_blank">
+            Open-sourced code
+          </a>{" "}
+          by Karyn Huynh
+        </small>
+      </div>
     </div>
   );
 }
