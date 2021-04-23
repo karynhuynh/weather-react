@@ -1,5 +1,4 @@
 // import Weather from "./Weather";
-import Search from "./Search";
 import Forecast from "./Forecast";
 import Temperature from "./Temperature";
 
@@ -9,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <div className="container mt-5">
-        <Search />
         <Temperature />
         <hr />
         <Forecast />

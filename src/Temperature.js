@@ -17,6 +17,31 @@ export default function Temperature() {
 
   return (
     <div className="Temperature">
+      <div className="Search">
+        <form>
+          <div className="row">
+            <div className="col-8 mt-3 mx-1">
+              <input
+                type="search"
+                className="form-control form-control-sm"
+                placeholder="Enter your city here..."
+                autoComplete="off"
+                autoFocus="on"
+                required
+              />
+            </div>
+            <div className="col-2 d-flex mt-3">
+              <button type="submit" className="btn btn-outline-dark mx-1">
+                <i className="fas fa-search"></i>
+              </button>
+              <button type="submit" className="btn btn-outline-dark mx-1">
+                <i className="fas fa-map-marker-alt"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
       <div className="main-card my-4">
         <div className="card-body">
           <h2 className="card-title">{mainWeather.city}</h2>
