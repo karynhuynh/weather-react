@@ -16,7 +16,7 @@
 
 .main-card-icon {
   font-size: 110px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .card-body,
@@ -25,8 +25,8 @@
   text-align: center;
 }
 
-Temperature h2,
-Temperature h6,
+.Temperature h2,
+.Temperature h6,
 .main-card,
 .celsius,
 .fahrenheit,
@@ -65,8 +65,4 @@ Temperature h6,
 .celsius,
 .fahrenheit {
   text-decoration: none;
-}
-
-.weather-description {
-  text-transform: capitalize;
 }

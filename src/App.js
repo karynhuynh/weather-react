@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <div className="container mt-5">
-        <Temperature />
+        <Temperature defaultCity="San Francisco"/>
         <hr />
         <Forecast />
         <small>
-          <a href="https://github.com/karynhuynh/weather-react" target="_blank">
+          <a href="https://github.com/karynhuynh/weather-react" target="_blank" rel="noreferrer">
             Open-sourced code
           </a>{" "}
           by Karyn Huynh
