@@ -14,11 +14,6 @@
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.main-card-icon {
-  font-size: 110px;
-  margin-top: 20px;
-}
-
 .card-body,
 .forecast-icon,
 .maxmin {

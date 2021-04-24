@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Sunrise(props) {
-  console.log(props);
   let hours = props.sunrise.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
