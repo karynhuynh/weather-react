@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import DateTime from "./DateTime";
+import Sunrise from "./Sunrise";
+import Sunset from "./Sunset";
 
 import "./Temperature.css";
 
@@ -10,12 +13,14 @@ export default function Temperature(props) {
     setWeatherData({
       ready: true,
       city: response.data.name,
-      date: "Tuesday, April 7, 2021 on 19:35",
+      date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       icon: <i className="fas fa-cloud main-card-icon"></i>,
+      sunrise: new Date(response.data.sys.sunrise * 1000),
+      sunset: new Date(response.data.sys.sunset * 1000),
     });
   }
 
@@ -50,7 +55,9 @@ export default function Temperature(props) {
         <div className="main-card my-4">
           <div className="card-body">
             <h2 className="card-title">{weatherData.city}</h2>
-            <h6 className="card-subtitle mb-2">{weatherData.date}</h6>
+            <h6 className="card-subtitle mb-2">
+              <DateTime date={weatherData.date} />
+            </h6>
             {weatherData.icon}
             <div className="main-card-degree">
               <span className="temperature">{weatherData.temperature}</span>
@@ -91,11 +98,15 @@ export default function Temperature(props) {
               <div className="col">
                 <div className="Sun">
                   <br />
-                  <i className="fas fa-cloud-sun"></i> Sunrise:
-                  <span className="sunrise"> 07:10</span>
+                  <i className="fas fa-cloud-sun"></i> Sunrise:{" "}
+                  <span className="sunrise">
+                    <Sunrise sunrise={weatherData.sunrise} />
+                  </span>
                   <br />
-                  <i className="fas fa-cloud-moon"></i> Sunset:
-                  <span className="sunset"> 15:23</span>
+                  <i className="fas fa-cloud-moon"></i> Sunset:{" "}
+                  <span className="sunset">
+                    <Sunset sunset={weatherData.sunset} />
+                  </span>
                 </div>
               </div>
             </div>

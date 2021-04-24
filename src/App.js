@@ -1,4 +1,3 @@
-// import Weather from "./Weather";
 import Forecast from "./Forecast";
 import Temperature from "./Temperature";
 
