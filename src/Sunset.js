@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Sunset(props) {
   let hours = props.sunset.getHours();
   if (hours < 10) {
