@@ -10,7 +10,7 @@ export default function Forecast(props) {
 
   useEffect(() => {
     //we want the coordinates to change when setLoaded is false
-    setLoaded(false)
+    setLoaded(false);
   }, [props.coordinates]);
   //if the input (is the condition) which are the coordinates, changes
 
@@ -29,6 +29,8 @@ export default function Forecast(props) {
                 <ForecastDay data={dailyForecast} />
               </div>
             );
+          } else {
+            return null;
           }
         })}
       </div>
