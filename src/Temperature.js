@@ -47,7 +47,7 @@ export default function Temperature(props) {
         <div className="Search">
           <form onSubmit={citySubmit}>
             <div className="row">
-              <div className="col-8 mt-3 mx-1">
+              <div className="col-9 mt-3 mx-2">
                 <input
                   type="search"
                   className="form-control form-control-sm"
@@ -61,9 +61,6 @@ export default function Temperature(props) {
               <div className="col-2 d-flex mt-3">
                 <button type="submit" className="btn btn-outline-dark mx-1">
                   <i className="fas fa-search"></i>
-                </button>
-                <button type="submit" className="btn btn-outline-dark mx-1">
-                  <i className="fas fa-map-marker-alt"></i>
                 </button>
               </div>
             </div>

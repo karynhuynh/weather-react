@@ -16,7 +16,7 @@ export default function TemperatureInfo(props) {
           <h6 className="card-subtitle mb-4">
             <DateTime date={props.data.date} />
           </h6>
-          <TemperatureIcon code={props.data.icon} />
+          <TemperatureIcon code={props.data.icon} color='#fff' size={125} />
           <div className="main-card-degree">
             <TemperatureDegree celsius={props.data.temperature} />
           </div>
