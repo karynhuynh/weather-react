@@ -1,11 +1,11 @@
 .day {
-  margin: 0 35px 0 25px;
+  margin: 0 35px 0 20px;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
 .maxmin {
-  margin-left: 30px;
+  margin-left: 40px;
   font-weight: bolder;
   text-align: center;
 }
