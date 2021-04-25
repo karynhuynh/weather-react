@@ -23,8 +23,6 @@
 .Temperature h2,
 .Temperature h6,
 .main-card,
-.celsius,
-.fahrenheit,
 .units,
 .sunrise,
 .sunset {
@@ -50,9 +48,4 @@
 
 .main-card-text {
   margin-left: 30px;
-}
-
-.celsius,
-.fahrenheit {
-  text-decoration: none;
 }

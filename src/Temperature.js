@@ -20,7 +20,7 @@ export default function Temperature(props) {
 
   function search() {
     const apiKey = "563b8c646e928f0609edc6757e3848c7";
-    const units = "metric";
+    const units = "imperial";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
     axios.get(apiUrl).then(handleResponse);
   }

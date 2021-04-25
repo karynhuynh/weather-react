@@ -18,7 +18,7 @@ export default function TemperatureInfo(props) {
           </h6>
           <TemperatureIcon code={props.data.icon} color='#fff' size={125} />
           <div className="main-card-degree">
-            <TemperatureDegree celsius={props.data.temperature} />
+            <TemperatureDegree fahrenheit={props.data.temperature} />
           </div>
         </div>
         <div className="main-card-text">
