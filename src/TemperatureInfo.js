@@ -3,7 +3,7 @@ import DateTime from "./DateTime";
 import Sunrise from "./Sunrise";
 import Sunset from "./Sunset";
 import TemperatureIcon from "./TemperatureIcon";
-import TemperatureDegree from './TemperatureDegree' 
+import TemperatureDegree from "./TemperatureDegree";
 
 import "./Temperature.css";
 
@@ -11,14 +11,14 @@ export default function TemperatureInfo(props) {
   return (
     <div className="TemperatureInfo">
       <div className="main-card my-4">
-        <div className="card-body pb-0">
-          <h2 className="card-title">{props.data.city}</h2>
-          <h6 className="card-subtitle mb-3">
+        <div className="card-body py-0">
+          <h2 className="card-title pt-3">{props.data.city}</h2>
+          <h6 className="card-subtitle mb-4">
             <DateTime date={props.data.date} />
           </h6>
           <TemperatureIcon code={props.data.icon} />
           <div className="main-card-degree">
-            <TemperatureDegree celsius={props.data.temperature}/>
+            <TemperatureDegree celsius={props.data.temperature} />
           </div>
         </div>
         <div className="main-card-text">
