@@ -1,30 +1,21 @@
 import React, { useState } from "react";
 import axios from "axios";
 import TemperatureInfo from "./TemperatureInfo";
+import Forecast from "./Forecast";
+
+import "./Temperature.css";
 
 export default function Temperature(props) {
   const [city, setCity] = useState(props.defaultCity);
-
   const [weatherData, setWeatherData] = useState({ ready: false });
-  function handleResponse(response) {
-    setWeatherData({
-      ready: true,
-      city: response.data.name,
-      date: new Date(response.data.dt * 1000),
-      temperature: Math.round(response.data.main.temp),
-      description: response.data.weather[0].description,
-      humidity: response.data.main.humidity,
-      wind: response.data.wind.speed,
-      // icon: <i className="fas fa-cloud main-card-icon"></i>,
-      icon: response.data.weather[0].icon,
-      sunrise: new Date(response.data.sys.sunrise * 1000),
-      sunset: new Date(response.data.sys.sunset * 1000),
-    });
-  }
 
   function citySubmit(event) {
     event.preventDefault();
     search();
+  }
+
+  function citySearch(event) {
+    setCity(event.target.value);
   }
 
   function search() {
@@ -34,8 +25,20 @@ export default function Temperature(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
-  function citySearch(event) {
-    setCity(event.target.value);
+  function handleResponse(response) {
+    setWeatherData({
+      ready: true,
+      coordinates: response.data.coord,
+      city: response.data.name,
+      date: new Date(response.data.dt * 1000),
+      temperature: Math.round(response.data.main.temp),
+      description: response.data.weather[0].description,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
+      icon: response.data.weather[0].icon,
+      sunrise: new Date(response.data.sys.sunrise * 1000),
+      sunset: new Date(response.data.sys.sunset * 1000),
+    });
   }
 
   if (weatherData.ready) {
@@ -67,6 +70,8 @@ export default function Temperature(props) {
           </form>
         </div>
         <TemperatureInfo data={weatherData} />
+        <hr />
+        <Forecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
