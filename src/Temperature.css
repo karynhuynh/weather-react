@@ -52,11 +52,6 @@
   margin-left: 30px;
 }
 
-.active {
-  cursor: default;
-}
-
-.active:hover,
 .celsius,
 .fahrenheit {
   text-decoration: none;

@@ -3,6 +3,7 @@ import DateTime from "./DateTime";
 import Sunrise from "./Sunrise";
 import Sunset from "./Sunset";
 import TemperatureIcon from "./TemperatureIcon";
+import TemperatureDegree from './TemperatureDegree' 
 
 import "./Temperature.css";
 
@@ -17,18 +18,7 @@ export default function TemperatureInfo(props) {
           </h6>
           <TemperatureIcon code={props.data.icon} />
           <div className="main-card-degree">
-            <span className="temperature">{props.data.temperature}</span>
-            <span className="units">
-              <a href="/" className="active celsius">
-                {" "}
-                °C
-              </a>{" "}
-              |
-              <a href="/" className="fahrenheit">
-                {" "}
-                °F
-              </a>
-            </span>
+            <TemperatureDegree celsius={props.data.temperature}/>
           </div>
         </div>
         <div className="main-card-text">
