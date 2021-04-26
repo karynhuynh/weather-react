@@ -1,4 +1,4 @@
-export default function Sunset(props) {
+function Sunset(props) {
   let hours = props.sunset.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -9,3 +9,5 @@ export default function Sunset(props) {
   }
   return `${hours}:${minutes}`;
 }
+
+export default Sunset;

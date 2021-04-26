@@ -36,12 +36,10 @@
 
 .units {
   position: relative;
-  top: -14px;
+  top: -11px;
   text-decoration: none;
 }
 
-.card-subtitle,
-.units,
 .main-card-text {
   font-size: 14px;
 }
