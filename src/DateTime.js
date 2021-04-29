@@ -1,16 +1,16 @@
 import React from "react";
 
 export default function DateTime(props) {
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = days[props.date.getDay()];
+  // let days = [
+  //   "Sunday",
+  //   "Monday",
+  //   "Tuesday",
+  //   "Wednesday",
+  //   "Thursday",
+  //   "Friday",
+  //   "Saturday",
+  // ];
+  // let day = days[props.date.getDay()];
   let months = [
     "January",
     "February",
@@ -38,7 +38,7 @@ export default function DateTime(props) {
   }
   return (
     <div>
-      {day}, {month} {date}, {year} {hours}:{minutes}
+      {month} {date}, {year} {hours}:{minutes}
     </div>
   );
 }
