@@ -23,7 +23,7 @@ export default function TemperatureInfo(props) {
         </div>
         <div className="main-card-text">
           <div className="row">
-            <div className="col ps-0">
+            <div className="col px-2">
               <div className="WDescription">
                 <br />
                 <span className="text-capitalize">
