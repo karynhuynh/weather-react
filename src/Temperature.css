@@ -1,13 +1,19 @@
-.btn-outline-dark {
+.btn-outline-secondary {
   padding: 3px 12px;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-card {
   height: 380px;
-  width: 330px;
+  width: 320px;
   margin-top: 22px;
   margin-bottom: 25px;
-  background-image: url("https://img.freepik.com/free-photo/cloud-background-with-pastel-colour_66899-1598.jpg?size=626&ext=jpg");
+  background-image: url("https://www.kindpng.com/picc/m/776-7766727_nube-clouds-cloud-sky-overlay-icon-white-aesthetic.png");
   border-radius: 10px;
   display: block;
   margin: 0 auto;
@@ -26,7 +32,7 @@
 .units,
 .sunrise,
 .sunset {
-  color: #fff;
+  color: rgb(104, 104, 104);
   font-weight: bolder;
 }
 

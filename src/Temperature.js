@@ -47,7 +47,7 @@ export default function Temperature(props) {
         <div className="Search">
           <form onSubmit={citySubmit}>
             <div className="row">
-              <div className="col-9 mt-4 mx-2">
+              <div className="col-10 mt-4 mx-2">
                 <input
                   type="search"
                   className="form-control form-control-sm"
@@ -58,17 +58,18 @@ export default function Temperature(props) {
                   onChange={citySearch}
                 />
               </div>
-              <div className="col-2 d-flex mt-4">
-                <button type="submit" className="btn btn-outline-dark mx-1">
+              <div className="col-1 mt-4 mx-2">
+                <button type="submit" className="btn btn-outline-secondary">
                   <i className="fas fa-search"></i>
                 </button>
               </div>
             </div>
           </form>
         </div>
-        <TemperatureInfo data={weatherData} />
-        <hr />
-        <Forecast coordinates={weatherData.coordinates} />
+        <div className="weather-forecast">
+          <TemperatureInfo data={weatherData} />
+          <Forecast coordinates={weatherData.coordinates} />
+        </div>
       </div>
     );
   } else {

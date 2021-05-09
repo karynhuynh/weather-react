@@ -30,19 +30,21 @@ export default function ForecastDay(props) {
   }
 
   return (
-    <div className="ForecastDay">
-      <div className="row">
-        <p className="col day">{day()}</p>
-        <div className="TemperatureIcon">
+    <div className="ForecastDay py-1">
+      <div className="row text-center">
+        <div className="TemperatureIcon col px-0 pt-1">
           <TemperatureIcon
             code={props.data.weather[0].icon}
-            color="#000"
-            size={25}
+            color="#666666"
+            size={37}
           />
         </div>
-        <p className="col maxmin">
-          <span className="max">{maxTemperature()}</span>{" "}
-          <span className="min">{minTemperature()}</span>
+        <p className="col day mb-0">
+          {day()}
+          <p className="col maxmin">
+            <span className="max">{maxTemperature()}</span>{" "}
+            <span className="min">{minTemperature()}</span>
+          </p>
         </p>
       </div>
     </div>

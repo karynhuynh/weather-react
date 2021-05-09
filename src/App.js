@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="container my-5">
+      <div className="container">
         <Temperature defaultCity="San Francisco" />
       </div>
     </div>

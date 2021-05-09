@@ -9,15 +9,11 @@ body {
 }
 
 .container {
-  margin-top: 45px;
-}
-
-.container {
-  height: 705px;
-  width: 400px;
+  height: 495px;
+  width: 650px;
   border: 1px solid #dadde1;
   border-radius: 10px;
   display: block;
-  margin: 0 auto;
+  margin: 100px auto;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
