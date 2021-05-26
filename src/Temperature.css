@@ -11,13 +11,13 @@
 .main-card {
   height: 385px;
   width: 330px;
-  margin-top: 22px;
-  margin-bottom: 25px;
   background-image: url("https://www.kindpng.com/picc/m/776-7766727_nube-clouds-cloud-sky-overlay-icon-white-aesthetic.png");
   border-radius: 10px;
   display: block;
   margin: 0 auto;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  color: rgb(104, 104, 104);
 }
 
 .card-body,
@@ -48,8 +48,6 @@
 
 .main-card-text {
   font-size: 14px;
-}
-
-.main-card-text {
   margin-left: 30px;
 }
+

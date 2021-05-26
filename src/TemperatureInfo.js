@@ -23,7 +23,7 @@ export default function TemperatureInfo(props) {
         </div>
         <div className="main-card-text">
           <div className="row">
-            <div className="col px-2">
+            <div className="col px-1 mx-2">
               <div className="WDescription">
                 <br />
                 <span className="text-capitalize">
@@ -36,7 +36,7 @@ export default function TemperatureInfo(props) {
                 Wind: <span>{props.data.wind}</span> m/s
               </div>
             </div>
-            <div className="col px-0">
+            <div className="col px-0 mx-2">
               <div className="Sun">
                 <br />
                 <i className="fas fa-cloud-sun"></i> Sunrise:{" "}

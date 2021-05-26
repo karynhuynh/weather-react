@@ -7,15 +7,12 @@
   margin: 25px 0 25px 25px;
   padding: 20px;
   color: #666666;
+  z-index: 100;
+  font-weight: bolder;
 }
 
 .day {
   text-transform: uppercase;
-}
-
-.day,
-.maxmin {
-  font-weight: bolder;
 }
 
 .maxmin {
