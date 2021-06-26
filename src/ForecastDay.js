@@ -39,13 +39,13 @@ export default function ForecastDay(props) {
             size={37}
           />
         </div>
-        <p className="col day mb-0">
-          {day()}
-          <p className="col maxmin">
+        <div className="col">
+          <p className="day mb-0">{day()}</p>
+          <p className="maxmin">
             <span className="max">{maxTemperature()}</span>{" "}
             <span className="min">{minTemperature()}</span>
           </p>
-        </p>
+        </div>
       </div>
     </div>
   );
