@@ -14,6 +14,9 @@ export default function Forecast(props) {
   }, [props.coordinates]);
   //if the input (is the condition) which are the coordinates, changes
 
+  // useEffect: allows you to apply some changes/ run the code after the component is loaded but only if something changes
+  // for example, if this variable changes, I want you to run this
+
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
@@ -46,7 +49,6 @@ export default function Forecast(props) {
     );
   } else {
     load();
-
     return null;
   }
 }
